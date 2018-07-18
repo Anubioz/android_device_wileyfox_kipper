@@ -17,7 +17,15 @@ include device/cyanogen/msm8916-common/BoardConfigCommon.mk
 
 include device/wileyfox/kipper/board/*.mk
 
+DEVICE_PATH := device/wileyfox/kipper
+
 TARGET_BOARD_INFO_FILE := device/wileyfox/kipper/board-info.txt
+
+WITH_TWRP := true
+
+BOARD_KERNEL_CMDLINE +=  earlyprintk androidboot.selinux=permissive
+
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
 # Inherit from proprietary files
 include vendor/wileyfox/kipper/BoardConfigVendor.mk

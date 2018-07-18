@@ -1,2 +1,46 @@
 # Hardware revision
 ro.product.model.platform=1
+persist.sys.usb.config=mtp,adb
+ro.product.locale=ru-RU
+
+rild.libpath=/vendor/lib64/libril-qc-qmi-1.so
+rild.libargs=-d /dev/smd0
+persist.hwc.mdpcomp.enable=true
+
+media.stagefright.enable-player=true
+media.stagefright.enable-http=true
+media.stagefright.enable-aac=true
+media.stagefright.enable-qcp=true
+media.stagefright.enable-fma2dp=true
+media.stagefright.enable-scan=true
+media.msm8939hw=0
+media.msm8929hw=0
+mm.enable.smoothstreaming=true
+mmp.enable.3g2=true
+media.aac_51_output_enabled=true
+
+persist.media.hls.enhancements=false
+mm.enable.qcom_parser=3407871
+
+# Default to AwesomePlayer
+media.stagefright.use-awesome=false
+
+ro.qualcomm.cabl=2
+
+persist.fuse_sdcard=true
+
+audio.offload.video=true
+sys.audio.init=false
+
+audio.dolby.ds2.enabled=true
+
+ro.config.zram=true
+
+ro.core_ctl_min_cpu=1
+ro.core_ctl_max_cpu=4
+
+ro.vendor.extension_library=libqti-perfd-client.so
+
+persist.sys.timezone=Europe/Moscow
+
+ro.config.ringtone=RR.mp3
